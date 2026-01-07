@@ -14,5 +14,11 @@ pipeline {
                 checkout scm
             }
         }
+
+        stage ('Build') {
+            steps {
+                sh 'building the application'
+            }
+        }
     }
 }
